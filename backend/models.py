@@ -22,4 +22,4 @@ class Download(models.Model):
     job = models.ForeignKey(Job, on_delete=models.CASCADE, related_name='downloads')
     
     def __str__(self):
-        return self.type
+        return self.dlName
